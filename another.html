@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mystory</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        @font-face {
+            font-family: Gill;
+            src: url(./gilldisplaycompressedplain.otf);
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            
+        }
+
+        /* Style for the navigation bar */
+        .navbar {
+            background-color: #F84962;
+            background height: 67px;
+            background width: 1200px;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+            margin-left: 52px;
+            margin-right: 52px;
+            margin-top: 35px;
+        }
+
+        /* Navigation list styling */
+        .navbar ul {
+            display: flex;
+            list-style-type: none;
+            gap: 30px;
+        }
+
+       
+        .navbar ul li a {
+            color: white;
+            font-family: "DM Sans", sans-serif;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+            transition: color 0.3s ease;
+            font-family: "DM Sans", sans-serif;
+            font-weight: 300;
+            font-style: normal;
+        }
+
+     
+        .navbar ul li a:hover {
+            background-color: white;
+            padding: 21px 20px;
+            color: #F84962;
+        }
+
+        .navbar ul li a:active {
+            background-color: white;
+            padding: 21px 20px;
+            color: #F84962;
+        }
+
+       
+  
+        .myselfcontainer {
+            position: absolute;
+            top: 100px; 
+            left: 52px; 
+            width: 925px;
+            height: 300px;
+            background: none;
+        }
+
+        @keyframes typewriter {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+        
+    
+
+    #intro{
+    position: relative;
+    right:100px;
+    font-family: "DM Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    color: #000000;
+    display: block;
+    text-align: start; /* Changed from inline to block to prevent inline wrapping */
+    white-space: nowrap; /* Prevents text from wrapping to the next line */
+     }
+
+
+        /* Flip card */
+        .thecard {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            transform-style: preserve-3d;
+            transition: all 0.8s ease;
+        }
+
+        /* Flip on hover */
+        .thecard:hover {
+            transform: rotateY(180deg);
+        }
+
+        /* Front face of the card */
+        .thefront, .theback {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            padding: 52px;
+            display: flex; /* Flexbox to align image and text side by side */
+            justify-content: space-between;
+            align-items: center; /* Center content vertically */
+         }
+
+        .thefront {
+            background: #ffffff;
+            box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.15);
+        }
+
+
+        /* Back face of the card */
+        .theback {
+            background: #ffffff;
+            box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.15);
+            transform: rotateY(180deg);
+        }
+
+        .theback p {
+            font-size: 12px;
+        }
+
+        .thefront img {
+       position: relative;
+        margin-left: -20px;
+        width: 200px;
+        height: 250px;
+        object-fit: cover; 
+        right: 650px;
+        flex-shrink: 0;
+    }
+
+    .gold{
+        position: relative;
+        right:90px;
+        top:-90px;
+    }
+
+    #please{
+        position: relative;
+        font-size: 50px;
+        top: -40px;
+        left: 250px;
+        font-family: "Cedarville Cursive";   
+        
+  white-space: nowrap;
+  overflow: hidden; 
+        width: 0; 
+        animation: typewriter 1.5s steps(30) 0.5s forwards, blink 0.75s step-end 1.5s;
+    }
+
+    #me{
+        position: relative;
+        font-size: 50px;
+        top: 35px;
+        left: -30px;
+        font-family: "DM Sans",sans-serif; 
+        
+  white-space: nowrap;
+  overflow: hidden; 
+  width: 0; 
+  animation: typewriter 1.5s steps(30) 0.5s forwards, blink 0.75s step-end 1.5s;
+}  
+#please::after, #me::after {
+  content: '';
+  border-right: none;
+  animation: none;
+}
+
+    .education{
+            position: absolute;
+            top: 410px;
+            left: 50px; 
+            width: 1315px;
+            height: 300px;
+            background: none;
+        }
+
+
+        /* Flip card */
+        .thecard1 {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            transform-style: preserve-3d;
+            transition: all 0.8s ease;
+        }
+
+       
+        .thecard1:hover {
+            transform: rotateY(180deg);
+        }
+
+        
+        .thefront1, .theback1 {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            padding: 52px;
+            display: flex; 
+            justify-content: space-between;
+         }
+
+        .thefront1 {
+            background: #F84962;
+            box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);
+        }
+
+       
+        .theback1 {
+            background: #F84962;
+            box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);
+            transform: rotateY(180deg);
+        }
+
+        /* Card text styling */
+        .thefront1 h1, .theback1 h1 {
+            font-family: "Gill", sans-serif;
+            text-align: center;
+        }
+
+        .thefront1 h1 {
+            font-size: 120px;
+            font-weight: bold;
+            margin-top: -30px;
+        }
+
+        .theback1 p {
+            font-size: 24px;
+            font-family:"DM Sans", sans-serif;
+            
+        }
+
+        #college{
+            position: relative;
+            font-family: "Gill", sans-serif;
+            font-size: 50px;
+            top: 130px;
+            right: 620px;
+            color: #FFF;       
+        }
+
+        #year{
+            position: relative;
+            font-family: "Gill", sans-serif;
+            font-size: 50px;
+            color: #FFF;
+            top: 135px;
+            right: 700px;   
+        }
+        
+        #degree {
+    position: relative;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 300;
+    color: #FFF;
+    top: -10px;
+    left: 10px;
+    display: block; 
+    white-space: nowrap; 
+}
+
+#para{
+    position: relative;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    color: #FFF;
+    top: 50px;
+    right: 510px; 
+    margin-top: 5px; 
+    display:block;
+}
+        .skills{
+            position: absolute;
+            top: 720px;
+            left: 50px; /* Right below the navbar */
+            width: 670px;
+            height: 300px;
+            background: none;
+        }
+
+        skill-item {
+           margin: 10px 0;          
+           text-align: center;       
+         }
+
+     #dskills, #a, #b, #c, #d 
+     {
+        font-size: 20px;           
+        margin: 5px 0;          
+      }
+
+        /* Flip card */
+        .thecard2 {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            transform-style: preserve-3d;
+            transition: all 0.8s ease;
+        }
+
+        /* Flip on hover */
+        .thecard2:hover {
+            transform: rotateY(180deg);
+        }
+
+        
+        .thefront2, .theback2 {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            padding: 52px;
+            display: flex; 
+            justify-content: space-between;
+            align-items: center; 
+         }
+
+        .thefront2 {
+            background: #00C4D1;;
+            box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);
+        }
+
+        
+        .theback2 {
+            background: #00C4D1;;
+            box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);
+            transform: rotateY(180deg);
+        }
+
+       
+        .thefront2 h1, .theback2 p {
+            font-family: "Gill", sans-serif;
+            text-align: center;
+        }
+
+        .thefront2 h1 {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .theback2 p {
+            font-size: 12px;
+        }
+
+        .theback2 h2 {
+    position: relative;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 300;
+    font-size: 25px;
+    color: #ffffff;
+        }
+
+        .theback2 ul{
+            list-style: none;
+        }
+
+        .soft{
+            list-style: none;
+            position: relative;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    color: #ffffff;
+    margin-left:10px;
+        }
+
+        .s{
+            font-size: 25px;
+            opacity:0.8;
+        }
+
+
+        #mar{
+            opacity:0.6;
+        }
+
+        #mo{
+            opacity:0.6;
+        }
+
+
+
+    #designskills{
+    position: relative;
+    font-family: "Gill", sans-serif;
+    font-size: 70px;
+    font-weight: 300;
+    color: #000000;
+    top: 10px;
+    left: -10px;
+    display: block;
+    text-align: start; 
+    white-space: nowrap; 
+    }
+    
+    .u{
+        height:200px;
+        width:300px;
+        position: relative;
+        
+        left:30px;
+    
+        transform: rotate(-7.28deg);
+        
+
+    }
+
+   
+
+    .software{
+            position: absolute;
+            top: 720px; 
+            left: 730px;
+            width: 635px;
+            height: 300px;
+            background: none;
+        }
+
+    #software1{
+    position: relative;
+    font-family: "Gill", sans-serif;
+    font-size: 70px;
+    font-weight: 300;
+    color: #EDC3D1;
+    top: 10px;
+    left: -10px;
+    display: block;
+    text-align: start; 
+    white-space: nowrap; 
+    }
+
+    .theback3 h2{
+    margin-top: -3px;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+    color: #ffffff;
+   
+    }
+
+    .theback3 img{
+        position:relative;
+        right: -280px;
+        top:-260px;
+
+    }
+    
+
+        /* Flip card */
+        .thecard3 {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            transform-style: preserve-3d;
+            transition: all 0.8s ease;
+        }
+
+        /* Flip on hover */
+        .thecard3:hover {
+            transform: rotateY(180deg);
+        }
+
+        /* Front face of the card */
+        .thefront3, .theback3 {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            padding: 52px;
+            
+         }
+
+        .thefront3 {
+            background: #000000;;
+            box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);
+        }
+
+        
+        .theback3 {
+            background: #000000;;
+            box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);
+            transform: rotateY(180deg);
+        }
+
+     
+        .thefront3 h1, .theback3 p {
+            font-family: "Gill", sans-serif;
+            text-align: center;
+        }
+
+        .thefront3 h1 {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .theback3 p {
+            font-size: 12px;
+        }
+
+
+        .random {
+    position: absolute;
+    top: 100px; 
+    left: 990px;
+    width: 375px;
+    height: 301px;
+    background: none;
+}
+
+        .thefront4 img {
+            position: absolute;
+            width: 380px;
+            height: 301px;
+            margin-left: 0;
+        }
+
+        /* Flip card */
+        .thecard4 {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            transform-style: preserve-3d;
+            transition: all 0.8s ease;
+        }
+
+      
+        .thecard4:hover {
+            transform: rotateY(180deg);
+        }
+
+       
+        .thefront4, .theback4 {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            display: flex;
+         }
+
+        .thefront4 {
+            background: #000000;;
+            box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);
+        }
+
+        
+        .theback4 {
+            background: #000000;;
+            box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);
+            transform: rotateY(180deg);
+        }
+
+       
+        .thefront4 h1, .theback3 p {
+            font-family: "Gill", sans-serif;
+            text-align: center;
+        }
+
+        .thefront4 h1 {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .theback4 p {
+            font-size: 12px;
+        }
+
+        .theback4 ul{
+            position: relative;
+
+            font-family: "DM Sans",sans-serif;
+            list-style-type:none;
+            color:#EDC3D1;
+            margin-left: 70px;
+            margin-top: 30px;
+
+
+        }
+
+        .bulb img {
+            position: absolute; 
+            z-index: 9999; /*  image appear above other content */
+            right: 180px; 
+            top: 210px;
+            width: 550px;
+            height: 650px;   
+        }
+
+        
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Main Stage</a></li>
+                <li><a href="another.html">My Story</a></li>
+                <li><a href="showcase.html">Showcase</a></li>
+                <li><a href="trackrecord.html">Track Record</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="bulb">
+        <img src="./Group 7.png">
+    </div>
+
+    <div class="myselfcontainer">
+        <div class="thecard">
+            <div class="thefront">
+                <p id="please">Hey,</p>
+                <p id="me">I'm Dhanya</p>
+                <img src="./IMG_4472.PNG">  
+            </div>
+            <div class="theback">
+                <div class="myself"> </div>
+                <img src="./image 31.png" width="150px" height="150px" class="gold">
+                <p id="intro"> A 19-year-old design enthusiast pursuing my passion for 
+                   blending<br> creativity with science. I love crafting innovative 
+                   solutions that merge <br>  artistic flair with a structured, problem-solving mindset. 
+                   Whether it's <br> designing visuals or exploring the intersection of 
+                   technology and art,<br>  I'm driven by the excitement of turning creative 
+                   ideas into <br> functional realities
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="education">
+    <div class="thecard1">
+        <div class="thefront1">
+            <h1>EDUCATION</h1>
+            <h2 id="college">PES University</h2>
+            <h2 id="year">2022-2026</h2>
+        </div>
+        <div class="theback1">
+            <h1 id="degree">Bachelor of Design, Interaction Design</h1>
+            <p id="para">
+                Because good design should feel like 
+                second nature, not rocket science. 
+                <br> It's about making every interaction 
+                easy, so users feel empowered and 
+                connected. I strive to create 
+                experiences that are intuitive, 
+                uplifting, and make life just a 
+                little bit easier, because great 
+                design enhances, it <br> never complicates.
+            </p>
+        </div>
+    </div>
+</div>
+
+
+<div class="random">
+    <div class="thecard4">
+        <div class="thefront4">
+           
+            <h1 id="in"> Interests </h1>
+            <img src="./image 27.png">
+        </div>
+        <div class="theback4">
+            <ul>
+                  <li>  <h2> What describes me? </h2><li>
+                    <br>
+                 <li>  <h2> Idea Juggler </h2></li>
+                 <li> <h2></h2></li>   
+                  <li>  <h2> Detail Detective</h2> </li>
+                  <li>  <h2> Feedback Fan</h2></li>
+                  <li> <h2> Fix-It Friend </h2> </li> 
+            </ul>
+        </div>
+    </div>
+</div>
+
+    <div class="skills">
+        <div class="thecard2">
+            <div class="thefront2">
+                <h1 id="designskills"> DESIGN SKILLS <br> & <br> SOFT SKILLS</h1>
+                <img src="./ui.png" alt="ui designer image" class="u">
+            </div>
+            <div class="theback2">
+                <ul>
+                 <li><h2>UI/UX Design</h2></li>       
+                 <li> <h2>Graphic Design </h2> </li>              
+                 <li>  <h2>Branding </h2> </li>        
+                 <li>  <h2>UX Research </h2>  </li>  
+                 <li> <h2 id="mo">Motion Graphics</h2> </li>  
+                 <li> <h2 id="mar">Digital Marketing</h2> </li>  
+                </ul>    
+
+                <ul id="soft">
+                    <li><h2 id="s">Soft Skills:</h2></li>    
+                    <br>   
+                    <li> <h2>Adaptability </h2> </li>              
+                    <li>  <h2>Problem Solving </h2> </li>        
+                    <li>  <h2>Teamwork </h2>  </li>  
+                    <li>  <h2>Leadership </h2>  </li>  
+                   </ul>    
+            </div>
+        </div>
+    </div>
+
+    <div class="software">
+        <div class="thecard3">
+            <div class="thefront3">
+                <h1 id="software1"> SOFTWARE SKILLS </h1>
+            </div>
+            <div class="theback3">
+                <h2 id="fig"> Figma </h2>
+                <h2 id="ps"> Adobe Photoshop</h2>
+                <h2 id="ill"> Adobe Illustrator</h2>
+                <h2 id="ae"> Adobe After Effects</h2>
+                <h2 id="sk"> Sketch Up</h2>
+                <h2 id="no"> Notion </h2>
+                <img src="./skill.png">
+            </div>
+        </div>
+    </div>
+
+  
+
+</body>
+</html>

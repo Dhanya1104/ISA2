@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Otters</title>
+
+    <style>
+
+        
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+        }
+
+
+        /* Header Section */
+      
+
+        header img {
+            width: 100%;
+            height: 700px;
+            object-fit: cover;
+        }
+
+        h1 {
+            text
+            letter-spacing:3px;
+            color:rgb(10,10,10);
+        }
+
+        /* Main Content */
+        h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: #555;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        /* Otter Images */
+        .otter-gallery {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 30px;
+        }
+
+        .otter-gallery img {
+            width: 300px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .otter-gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        /* List Styling */
+        ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        ul li {
+            background-color: #eee;
+            padding: 20px;
+            width: 30%;
+            border-radius: 5px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        ul li:hover {
+            background-color: #d0e8e8;
+        }
+
+        /* Button Styling */
+        .cta-button {
+            display: block;
+            width: 200px;
+            margin: 30px auto;
+            padding: 10px 20px;
+            text-align: center;
+            background-color: #4CAF50;
+            color: white;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .cta-button:hover {
+            background-color: #45a049;
+        }
+
+        /* Form Section */
+        .form-section {
+            margin-top: 40px;
+            background-color: #f0f9f9;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        label {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"], input[type="submit"] {
+            padding: 10px;
+            width: 100%;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            border-radius: 0 0 10px 10px;
+        }
+
+        footer a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+
+    <!-- Header Section -->
+    <header>
+        <img src="https://i.pinimg.com/originals/54/eb/3c/54eb3cbff8f39a0536e2b3feca18c9bc.gif"" alt="Otter Image">
+        <h1></h1>
+        <h2>Adopt an otter</h2>
+    </header>
+
+    <!-- Main Content Section -->
+    <div class="container">
+        <h1>Welcome to the Otter World</h1>
+        <p>Otters are playful and intelligent mammals known for their love of water and their cute, mischievous personalities. They are incredibly social and use their strong bonds with family members to thrive in the wild. Otters are often seen swimming, playing, or even using tools to break open food.</p>
+
+        <h2>Meet the Otters</h2>
+        <div class="otter-gallery">
+            <img src="https://i.pinimg.com/564x/fb/74/e4/fb74e4f6fab782b7e0a45e59f8883331.jpg" alt="Sea Otter">
+            <img src="https://i.pinimg.com/564x/23/3d/b1/233db105bbeb077ff3b0076b2330e5d2.jpg" alt="River Otter">
+            <img src="https://cdn.pixabay.com/photo/2013/03/04/17/44/riesen-90026_1280.jpg" alt="Playful Otter">
+        </div>
+
+        <ul>
+            <li><strong>Sea Otter:</strong> Found along the coasts of the Pacific Ocean, these otters are known for their dense fur and ability to use tools.</li>
+            <li><strong>River Otter:</strong> These otters are excellent swimmers and thrive in freshwater rivers, streams, and lakes.</li>
+            <li><strong>Eurasian Otter:</strong> Native to Europe and Asia, they are known for their elusive and solitary nature.</li>
+        </ul>
+
+        <!-- Call to Action Button -->
+        <a href="https://www.gettyimages.in/search/2/image-film?phrase=otter" class="cta-button">Explore More Otters</a>
+
+        <!-- Form Section -->
+        <div class="form-section">
+            <h2>Adopt Your Own Otter</h2>
+            <form>
+                <label for="otter-name">What would you name your otter?</label>
+                <input type="text" id="otter-name" name="otter-name" placeholder="Enter otter name...">
+
+                <label for="otter-photo">Upload a photo of your otter (URL):</label>
+                <input type="text" id="otter-photo" name="otter-photo" placeholder="https://example.com/your-otter.jpg">
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Otterly Awesome. See more <a href="https://www.gettyimages.in/search/2/image-film?phrase=otter">otters</a> in our gallery!</p>
+    </footer>
+
+</body>
+</html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Otter World</title>
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f4f8;
+        }
+
+        /* Navigation bar styling */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: white;
+            padding: 15px 30px;
+            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar h1 {
+            color: black;
+            font-size: 28px;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        .navbar ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .navbar ul li {
+            margin-left: 20px;
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            color: black;
+            font-size: 16px;
+            padding: 8px 16px;
+            transition: color 0.3s ease;
+        }
+
+        .navbar ul li a:hover {
+            color: #ff8c00;
+        }
+
+        /* Hero section */
+        .hero {
+            background-image: url('https://cdn.pixabay.com/photo/2013/03/04/17/44/riesen-90026_1280.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 150px 20px;
+            position: relative;
+        }
+
+        .hero:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width
+            .hero:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); /* Dark overlay to make text stand out */
+            z-index: 1;
+        }
+
+        .hero h1 {
+            font-size: 60px;
+            font-weight: bold;
+            z-index: 2;
+            position: relative;
+        }
+
+        .hero p {
+            font-size: 22px;
+            margin-top: 20px;
+            z-index: 2;
+            position: relative;
+        }
+
+        .hero a {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 10px 20px;
+            background-color: #555; /* Neutral dark button color */
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 5px;
+            z-index: 2;
+            position: relative;
+            transition: background-color 0.3s ease;
+        }
+
+        .hero a:hover {
+            background-color: #333;
+        }
+
+    </style>
+</head>
+<body>
+</body>
+
+
+<div class="lastimg"></div>
+          <img src="https://e3.365dm.com/20/05/2048x1152/skynews-otter-sea_4984040.jpg?20200506023915 width="300" height="300">
+         </div> 
+</html>

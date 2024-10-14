@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .blackcontainer {
+            height: 700px; 
+            margin: 40px;
+            filter: drop-shadow(4px);
+            background-color: black;
+            position: relative;
+            transition: background-color 0.3s ease; /
+        }
+
+        .blackcontainer img {
+            position: absolute;
+            margin-top: 350px;
+            margin-left: -75px;
+            z-index: 1;
+        }
+
+        
+        .blackcontainer .text-wrapper {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            z-index: 2;
+        }
+
+        .blackcontainer h1 {
+            font-family: "Cedarville Cursive", cursive;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 37px;
+            color: white;
+            margin: 0;
+        }
+
+        #colourline {
+            font-family: "DM Sans", sans-serif;
+            font-weight: 200;
+            font-size: 35px;
+            color: white;
+            margin: 0; 
+            padding-top: 140px;
+            text-align: center;
+        }
+
+        
+        .line-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+        }
+
+        .line-wrapper h1 {
+            margin: 0;
+            padding: 0;
+        }
+
+        #beyond {
+            font-family: "Cedarville Cursive", cursive;
+            font-weight: 400;
+            font-size: 37px;
+            color: white;
+            margin-right: 10px; 
+        }
+
+        #too {
+            font-family: "DM Sans", sans-serif;
+            font-weight: 200;
+            font-size: 35px;
+            color: white;
+        }
+
+      
+        .hop-onboard-btn {
+            font-family: "DM Sans", sans-serif;
+            font-size: 15px;
+            font-weight: 300;
+            color: white;
+            background-color: transparent;
+            border: 1px solid white;
+            border-radius: 100px;
+            width: 150px;
+            height: 50px;
+            cursor: pointer;
+            text-align: center;
+            margin-top: 10px; 
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .hop-onboard-btn:hover {
+            background-color: transparent; 
+            border: 1px solid rgb(0, 0, 0);
+            color: black; 
+        }
+
+        /* Change text color on hover */
+        .blackcontainer h1,
+        .blackcontainer #beyond,
+        .blackcontainer #too,
+        .blackcontainer #colourline {
+            transition: color 0.3s ease; 
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <div class="blackcontainer" id="blackContainer">
+            <img src="./Group 12.png" width="1480px" height="500px" class="pop-image" alt="Image">
+            <div class="text-wrapper">
+                <h1 id="colourline">"Colour, but sometimes</h1>
+                <div class="line-wrapper">
+                    <h1 id="beyond">beyond the lines</h1>
+                    <h1 id="too">too"</h1>
+                </div>
+                <a href="another.html">
+                    <button class="hop-onboard-btn" id="hopOnboardBtn">Hop Onboard</button>
+                </a>
+            </div>
+        </div>
+    </main>
+    <div class="cedar"></div>
+
+    <script>
+        
+        const button = document.getElementById('hopOnboardBtn');
+        const container = document.getElementById('blackContainer');
+
+        
+        button.addEventListener('mouseover', function() {
+            container.style.backgroundColor = 'white'; 
+            const texts = container.getElementsByTagName('h1');
+            for (let text of texts) {
+                text.style.color = 'black'; 
+            }
+        });
+
+        button.addEventListener('mouseout', function() {
+            container.style.backgroundColor = 'black'; 
+            const texts = container.getElementsByTagName('h1');
+            for (let text of texts) {
+                text.style.color = 'white'; 
+            }
+        });
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,202 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mystory</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        @font-face {
+            font-family: Gill;
+            src: url(./gilldisplaycompressedplain.otf);
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            
+        }
+
+       
+        .navbar {
+            background-color: #F84962;
+            background height: 67px;
+            background width: 1200px;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+            margin-left: 52px;
+            margin-right: 52px;
+            margin-top: 35px;
+        }
+
+        /* Navigation list styling */
+        .navbar ul {
+            display: flex;
+            list-style-type: none;
+            gap: 30px;
+        }
+
+        /* Navigation links styling */
+        .navbar ul li a {
+            color: white;
+            font-family: "DM Sans", sans-serif;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+            transition: color 0.3s ease;
+            font-family: "DM Sans", sans-serif;
+            font-weight: 300;
+            font-style: normal;
+        }
+
+        /* Hover effect */
+        .navbar ul li a:hover {
+            background-color: white;
+            padding: 21px 20px;
+            color: #F84962;
+        }
+
+        /* Selected/active state */
+        .navbar ul li a.active {
+            background-color: white;
+            padding: 21px 25px;
+            color: #F84962;
+        }
+
+        .Interaction{
+            padding-top: 50px;
+            padding-left: 180px;
+            font-family: "Gill", sans-serif;
+            color: #F84962;
+            font-size: 90px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+        }
+
+        .Graphic{
+            position: relative;
+            font-family: "Gill", sans-serif;
+            padding-top: 35px;
+            padding-left: 180px;
+            color: #FEAEC1;
+            font-size: 90px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+        }
+
+        .Branding{
+            padding-top: 30px;
+            position: relative;
+            font-family: "Gill", sans-serif;
+            padding-left: 180px;
+            color: #FEAEC1;
+            font-size: 90px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+        }
+
+        .Interaction img {
+            position: absolute;
+            top: 100px;
+            left: 80px;
+            width:250;
+            height:210px;
+
+            z-index: -1; 
+           
+        }
+
+        .Graphic img {
+            position: absolute;
+            top: 10px;
+            left: 80px;
+            width:250;
+            height:210px;
+            z-index: -1; 
+           
+        }
+
+        .Branding img {
+            position: absolute;
+            top: 10px;
+            left: 80px;
+            width:250;
+            height:210px;
+            z-index: -1; 
+        }
+
+        .Interaction a{
+    text-decoration: none;
+    color: #F84962;
+}
+
+.Graphic a, .Branding a {
+    text-decoration: none;
+    color: #FEAEC1;
+}
+
+.Interaction a:hover{
+    text-decoration: none;
+    color: #F84962;
+}
+
+.Graphic a, .Branding a {
+    text-decoration: none;
+    color: #FEAEC1;
+}
+
+.Interaction a h1, .Graphic a h1, .Branding a h1 {
+    transition: transform 0.3s ease-in-out; /* Smooth transition */
+    display: inline-block; 
+}
+
+
+.Interaction a:hover h1, .Graphic a:hover h1, .Branding a:hover h1 {
+    transform: scale(1.1); 
+}
+
+.Interaction:hover, .Graphic:hover, .Branding:hover {
+    background-color: rgba(248, 73, 98, 0.1); 
+    transition: background-color 0.3s ease;
+}
+
+
+        </style>
+        </head>
+        <body>
+            <header>
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="index.html">Main Stage</a></li>
+                        <li><a href="another.html">My Story</a></li>
+                        <li><a href="showcase.html">Showcase</a></li>
+                        <li><a href="trackrecord.html">Track Record</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+        <div class="Interaction">
+            <img src="./seeu.png">
+            <a href="interaction.html"><h1>INTERACTION</h1></a>
+        </div>
+
+        <div class="Graphic">
+            <img src="./graphic.png">
+            <a href="graphic.html"><h1>GRAPHIC</h1></a>
+        </div>
+
+        <div class="Branding">
+            <img src="./branding.png">
+            <a href="branding.html"> <h1>BRANDING</h1></a>
+        </div>
+        </body>
+        </html>
